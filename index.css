@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.chat {
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 8px gray;
+    overflow-y: auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 8px blue;
+    padding: 1rem;
+    border-radius: 15px;
+    gap: 1rem;
+}
+
+form input,
+form button {
+    width: 80%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid cyan;
+    outline: none;
+    font-size: 18px;
+}
+
+form button {
+    width: 20%;
+    background-color: deeppink;
+    border: none;
+    color: white;
+    font-size: bolder;
+    cursor: pointer;
+}
+
+.chat h3 {
+    display: inline-block;
+    background-color: cyan;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.chat h3::after {
+    content: "";
+    width: 20px;
+    height: 8px;
+    background-color: cyan;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    border-top-left-radius: 20px;
+
+}
